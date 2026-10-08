@@ -1,0 +1,545 @@
+/* ====================================
+   VARIABLES CSS
+   ==================================== */
+:root {
+    --pergamino: #EDE0C8;
+    --pergamino-claro: #F5EBD8;
+    --verde: #7A4E2D;
+    --verde-oscuro:  #5C4033;
+    --marron: #553A22;
+    --marron-oscuro: #2B1C10;
+    --dorado: #C9923E;
+    --crema: #F7EEDC;
+}
+
+/* ====================================
+   RESET Y BASE
+   ==================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background: linear-gradient(180deg, var(--pergamino) 0%, var(--pergamino-claro) 100%);
+    color: var(--marron);
+    line-height: 1.7;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: var(--crema);
+}
+
+h2, h3 {
+    font-family: 'Lora', serif;
+    color: var(--marron-oscuro);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: var(--marron);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+img {
+    border-radius: 15px;
+}
+.hero-logo {
+    border-radius: 0;
+}
+
+/* ====================================
+   NAVEGACIÓN
+   ==================================== */
+.navbar {
+    background-color: rgba(92, 64, 51, 0.5);
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.navbar-logo {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    color: var(--crema);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navbar-menu a {
+    color: var(--crema);
+    font-size: 1rem;
+    font-family: 'Lora', serif;
+    white-space: nowrap;
+}
+
+.navbar-menu a:hover {
+    color: var(--dorado);
+}
+
+/* ====================================
+   HERO / CABECERA
+   ==================================== */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero-juego {
+    height: 300px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-juego .hero-image {
+    object-position: center 25%;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(43,28,16,0.4) 0%, rgba(43,28,16,0.2) 50%, rgba(43,28,16,0.5) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.hero-logo {
+    max-width: 60%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    min-width: 200px;
+}
+
+/* ====================================
+   CONTENEDOR PRINCIPAL
+   ==================================== */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ====================================
+   SECCIONES
+   ==================================== */
+.seccion {
+    padding: 5rem 0;
+}
+
+.seccion-titulo {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--marron-oscuro);
+}
+
+/* ====================================
+   PLACEHOLDER DE IMAGEN
+   ==================================== */
+.imagen-placeholder {
+    background-color: var(--pergamino-claro);
+    border: 1px solid var(--marron);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.imagen-placeholder-texto {
+    color: var(--marron);
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* ====================================
+   SECCIÓN LA CAJA
+   ==================================== */
+.caja-contenido {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.caja-imagen {
+    flex: 1;
+    min-height: 400px;
+}
+
+.caja-imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.caja-texto {
+    flex: 1;
+}
+
+.caja-texto p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+.caja-texto .seccion-titulo {
+    text-align: left;
+}
+
+/* ====================================
+   SECCIÓN RESERVA
+   ==================================== */
+
+.reserva-contenido {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.reserva-llavero {
+    flex: 1;
+    order: 2;
+}
+
+.reserva-llavero-imagen {
+    min-height: 350px;
+    margin-bottom: 2rem;
+    width: 60%;
+}
+
+.reserva-llavero-imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.reserva-llavero-texto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--marron-oscuro);
+}
+
+.reserva-llavero-texto p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.reserva-formulario {
+    flex: 1;
+    order: 1;
+    margin-top: -3rem;
+}
+
+.formulario {
+    padding: 2.5rem;
+}
+
+.formulario-grupo {
+    margin-bottom: 1.8rem;
+}
+
+.formulario-grupo label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: var(--marron-oscuro);
+    font-size: 0.9rem;
+}
+
+.formulario-grupo input,
+.formulario-grupo textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border:none;
+    font-family: 'Lora', serif;
+    font-size: 0.9rem;
+    background-color: var(--pergamino);
+    transition: border-color 0.3s ease;
+    border-radius: 8px;
+}
+
+.formulario-grupo input:focus,
+.formulario-grupo textarea:focus {
+    outline: none;
+    border-color: var(--dorado);
+}
+
+.formulario-grupo textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.formulario-boton {
+    display: block;
+    width: 100%;
+    padding: 0.9rem;
+    background-color: var(--verde);
+    color: var(--crema);
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.formulario-boton:hover {
+    background-color: var(--verde-oscuro);
+}
+
+/* ====================================
+   SECCIÓN CÓMO SE JUEGA
+   ==================================== */
+.pasos-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.paso {
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+}
+
+.paso-icono {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.paso-icono img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.paso-titulo {
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: var(--marron-oscuro);
+    font-weight: 600;
+}
+
+.paso-texto {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ====================================
+   SECCIÓN TABLERO
+   ==================================== */
+.tablero-contenido {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.tablero-imagen {
+    flex: 1;
+    min-height: 300px;
+}
+
+.tablero-imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.tablero-texto {
+    flex: 1;
+}
+
+.tablero-texto p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+.tablero-texto .seccion-titulo {
+    text-align: left;
+}
+
+/* ====================================
+   SECCIÓN PERSONAJES
+   ==================================== */
+
+
+.personajes-contenido {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.personajes-imagen {
+    width: 100%;
+    min-height: 350px;
+}
+
+.personajes-imagen img {
+    width: 100%;
+    height: auto;
+}
+
+/* ====================================
+   FOOTER
+   ==================================== */
+.footer {
+    background-color: var(--verde-oscuro);
+    color: var(--crema);
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.footer-titulo {
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.footer-frase {
+    font-style: italic;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    color: var(--dorado);
+    font-size: 1rem;
+}
+
+.footer-copyright {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* ====================================
+   RESPONSIVE
+   ==================================== */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.6rem 1rem;
+    }
+
+    .navbar-logo {
+        font-size: 1.1rem;
+    }
+
+    .navbar-menu {
+        gap: 1rem;
+    }
+
+    .navbar-menu a {
+        font-size: 0.9rem;
+    }
+
+    .hero-logo {
+        max-width: 80%;
+        max-height: 250px;
+        min-width: 180px;
+    }
+
+
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .seccion-titulo {
+        font-size: 2.2rem;
+    }
+
+    .caja-contenido,
+    .tablero-contenido,
+    .personajes-contenido,
+    .reserva-contenido {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .caja-imagen,
+    .tablero-imagen,
+    .personajes-imagen,
+    .reserva-llavero-imagen {
+        width: 100%;
+        min-height: 250px;
+    }
+
+    .reserva-formulario {
+        width: 100%;
+        order: 1;
+        margin-top: 1rem;
+    }
+
+    .reserva-llavero {
+        width: 100%;
+        order: 2;
+    }
+
+
+    .pasos-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .pasos-container::before {
+        display: none;
+    }
+
+    .paso {
+        width: 100%;
+    }
+
+    .formulario {
+        padding: 2rem;
+    }
+
+    .footer-enlaces {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .personajes-imagen,
+    .reserva-llavero-imagen {
+        min-height: 300px;
+    }
+    .personajes .seccion-titulo {
+    line-height: 1.1;
+}
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miau & Mazmorras - Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="navbar-logo">Miau & Mazmorras</div>
+        <ul class="navbar-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="juego.html">El juego</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO / CABECERA -->
+    <header class="hero">
+        <img src="images/cabecera.jpg" alt="Paisaje fantástico con gatos aventureros" class="hero-image">
+        <div class="hero-overlay">
+            <img src="images/logotipo.png" alt="Miau & Mazmorras" class="hero-logo">
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- SECCIÓN 1: LA CAJA -->
+        <section class="seccion">
+            <div class="contenedor">
+                <div class="caja-contenido">
+            <div class="caja-imagen">
+                <img src="images/foto caja.png" alt="Caja del juego Miau & Mazmorras">
+            </div>
+            <div class="caja-texto">
+                <h2 class="seccion-titulo">La caja</h2>
+                <p>Todo lo necesario para comenzar una aventura felina. Explora el tablero, encuentra enemigos, elige a tu aventurero y demuestra que tienes lo necesario para conquistar la mazmorra.</p>
+                <p>En la caja encontrarás un tablero detallado, cartas de personajes, cartas de enemigos, dados y todo el material necesario para horas de diversión con amigos y familia.</p>
+            </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: RESERVA -->
+        <section class="seccion reserva">
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Reserva tu copia</h2>
+                <div class="reserva-contenido">
+                    <!-- Columna izquierda: Llavero -->
+                    <div class="reserva-llavero">
+                        <div class="reserva-llavero-imagen">
+                            <!-- Placeholder para images/llavero.jpg -->
+                            <img src="images/llavero.png" alt="Llavero de Miau & Mazmorras">
+                        </div>
+                        <div class="reserva-llavero-texto">
+                            <h3>Un compañero para tu aventura</h3>
+                            <p>Al reservar tu copia de Miau & Mazmorras, recibirás como regalo exclusivo un llavero de colección con uno de nuestros gatos aventureros.</p>
+                        </div>
+                    </div>
+                    <!-- Columna derecha: Formulario -->
+                    <div class="reserva-formulario">
+                        <form class="formulario">
+                            <div class="formulario-grupo">
+                                <label for="nombre">Nombre y apellidos</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="formulario-grupo">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="formulario-grupo">
+                                <label for="direccion">Dirección de envío</label>
+                                <input type="text" id="direccion" name="direccion" required>
+                            </div>
+                            <div class="formulario-grupo">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" placeholder="¿Tienes alguna pregunta o comentario?"></textarea>
+                            </div>
+                            <button type="submit" class="formulario-boton">RESERVAR</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="contenedor">
+            <h3 class="footer-titulo">Miau & Mazmorras</h3>
+            <p class="footer-frase">Donde cada gato es un héroe y cada mazmorra una aventura.</p>
+            <p class="footer-copyright">&copy; 2026 Miau & Mazmorras. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

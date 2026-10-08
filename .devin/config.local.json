@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Exec(dir)",
+      "Exec(mkdir css)",
+      "Exec(mkdir images)",
+      "Exec(copy)"
+    ]
+  }
+}
